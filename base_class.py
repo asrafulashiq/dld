@@ -36,5 +36,15 @@ class BVar():
     def __neg__(self):
         return ~self
 
+    def __repr__(self):
+        return str(self.__v)
+
+    def __str__(self):
+        return str(self.__v)
 
 
+def main():
+    print BVar(1)
+
+if __name__=='__main__':
+    main()
