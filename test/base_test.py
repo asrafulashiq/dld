@@ -56,7 +56,7 @@ class BVarTest(unittest.TestCase):
         x2 = BVar(1)
         x3 = BVar(0)
 
-        self.assertEqual(x1+x2*x3,x1)
+        self.assertEqual(x3+x1+x2*x3,x1)
         self.assertEqual(~x3*x2,x2)
         self.assertEqual((x1+x2)*~x3,BVar(1))
         
